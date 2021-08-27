@@ -1,0 +1,24 @@
+body {
+  background-image: url("bg.jpeg");
+  background-color: rosybrown;
+}
+.App {
+  width: 600px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:bisque;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid brown;
+  color: brown;
+}
+
+h1, h2 {
+  margin: 5px auto;
+  color: brown;
+}
+
+
