@@ -5,6 +5,8 @@ import Loader from 'react-loader-spinner';
 import { Switch, Route } from 'react-router-dom';
 
 import './App.css';
+import UserMenu from './Components/Common/UserMenu/UserMenu';
+
 import AppBar from './Components/Common/AppBar/AppBar';
 
 const RegisterView = lazy(() => import('./views/RegisterView.js' /* webpackChunkName: "RegisterView"*/),);
@@ -25,7 +27,8 @@ export default function App() {
    return (
     <>
     <div className="App">
-    <h1 className="header">Your Phonebook</h1>            
+    <UserMenu />
+    <h1 className="header">Phonebook</h1>            
     
     <AppBar />
 

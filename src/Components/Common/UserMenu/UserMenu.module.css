@@ -1,0 +1,40 @@
+.userMenu{
+    display: flex;
+    justify-content: flex-end;
+    background-color: bisque;
+    width: 624px;
+    /* padding: 10px; */
+    font-size: 14px;
+}
+.email{
+    padding: 10px;
+    margin: 0;
+}
+.backButton{
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+}
+.link {
+    display: inline-block;
+    text-decoration: none;
+    color: brown;
+    padding: 0;
+    margin: 0;
+    margin-right: 7px;
+}
+
+/* .activeLink {
+    composes: link;
+    color:crimson;
+} */
+.icon {
+    display: inline-block;
+    align-items: flex-end;
+}
+path {
+    display: inline-block;
+    width: 14px;
+    padding: 3px;
+    color: brown;
+}
