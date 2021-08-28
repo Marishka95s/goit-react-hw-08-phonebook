@@ -1,11 +1,9 @@
-import { useState, useEffect } from "react";
-import { NavLink, useRouteMatch, useLocation } from "react-router-dom";
+// import { useState, useEffect } from "react";
+// import { NavLink, useRouteMatch, useLocation } from "react-router-dom";
 import { useSelector } from 'react-redux';
 import { getTotalContacts } from '../redux/phonebook/contacts-selectors'
 
-import ContactForm from '../Components/Contacts/ContactForm';
 import ContactList from '../Components/Contacts/ContactList';
-import Filter from '../Components/Contacts/Filter';
 import styles from './ContactsView.module.css';
 
 export default function LoginView() {
