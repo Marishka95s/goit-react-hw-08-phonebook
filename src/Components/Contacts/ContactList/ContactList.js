@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useSelector, useDispatch } from 'react-redux';
-import { getFiltredContacts, getError, getLoadingStatus } from '../../redux/phonebook/contacts-selectors';
-import { fetchContact, deleteContact } from '../../redux/phonebook/contacts-operations';
+import { getFiltredContacts, getError, getLoadingStatus } from '../../../redux/phonebook/contacts-selectors';
+import { fetchContact, deleteContact } from '../../../redux/phonebook/contacts-operations';
 import styles from './ContactList.module.css';
 import { useEffect } from 'react';
 

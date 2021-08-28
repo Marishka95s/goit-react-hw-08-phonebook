@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 // import useLocalStorage from '../../hooks/useLocalStorage';
 import PropTypes from 'prop-types';
 import { useDispatch, useSelector  } from 'react-redux';
-import { getFiltredContacts } from '../../redux/phonebook/contacts-selectors';
-import { addContact } from '../../redux/phonebook/contacts-operations';
+import { getFiltredContacts } from '../../../redux/phonebook/contacts-selectors';
+import { addContact } from '../../../redux/phonebook/contacts-operations';
 import styles from './ContactForm.module.css';
 
 export default function ContactForm() {
@@ -52,10 +52,11 @@ export default function ContactForm() {
                 title="Номер телефона должен состоять цифр и может содержать пробелы, тире, круглые скобки и может начинаться с +" 
                 className={styles.input} value={number} onChange={handleChange} required />
             </label>
-            <button type="submit" 
-            className={styles.btn}>
-                Add contact
-            </button>
+            <div className={styles.label}>
+                <button type="submit" className={styles.btn}>
+                    Add contact
+                </button>
+            </div>
         </form>
     )
 }

@@ -1,14 +1,16 @@
 .list {
-    width: 500px;
-    
+    text-align: center;
+    padding-left: 0;    
 }
 .item {
+    width: 400px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 5px;
     border: 1px solid rosybrown;
+    border-radius: 7px;
     list-style:disc;
     margin: 2px;
 }
@@ -18,7 +20,7 @@
 .btn{
     color: tomato;
     background-color:bisque;
-    padding: 10px 20px;
+    padding: 7px 15px;
     border: 1px solid rosybrown;
     border-radius: 5px;
 }

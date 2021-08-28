@@ -1,0 +1,27 @@
+.navigation{
+    background-color: bisque;
+    width: 524px;
+}
+.link {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px;
+    font-weight: 500;
+    color: brown;
+    font-size: 18px;
+}
+
+.activeLink {
+    composes: link;
+    color:crimson;
+}
+.icon {
+    display: inline-block;
+    align-items: flex-end;
+}
+path {
+    display: inline-block;
+    /* width: 14px; */
+    /* padding: 3px; */
+
+}
