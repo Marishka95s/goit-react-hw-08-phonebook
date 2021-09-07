@@ -9,9 +9,9 @@
     color: brown;
     font-size: 18px;
 }
-/* .activeLink {
+.link:active {
     color:red;
-} */
+}
 .link:hover {
     color: black;
 }

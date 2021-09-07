@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux'; 
 import { lazy, Suspense } from 'react';
 import Loader from 'react-loader-spinner';
-import { Switch } from 'react-router-dom';
+import { Switch, Redirect } from 'react-router-dom';
 import { authOperations, authSelectors } from './redux/auth';
 
 import './App.css';
@@ -16,7 +16,7 @@ import PublicRoute from './Components/Authorization/PublicRoute/PublicRoute';
 const RegisterView = lazy(() => import('./views/RegisterView.js' /* webpackChunkName: "RegisterView"*/),);
 const LoginView = lazy(() => import('./views/LoginView.js' /* webpackChunkName: "LoginView"*/),);
 const ContactsView = lazy(() => import('./views/ContactsView.js' /* webpackChunkName: "ContactsView"*/),);
-const NotFoundView = lazy(() => import('./views/NotFoundView.js' /* webpackChunkName: "NotFoundView"*/),);
+// const NotFoundView = lazy(() => import('./views/NotFoundView.js' /* webpackChunkName: "NotFoundView"*/),);
 
 export default function App() {
   const dispatch = useDispatch();
@@ -50,7 +50,7 @@ export default function App() {
               </PrivateRoute>
 
               <PublicRoute>
-                <NotFoundView />
+                <Redirect to="/" />
               </PublicRoute>
           </Switch>
         </Suspense>

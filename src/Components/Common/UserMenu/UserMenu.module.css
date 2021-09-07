@@ -5,11 +5,15 @@
     /* width: 624px; */
     /* padding: 10px; */
     font-size: 14px;
+    margin-left: 10px;
 }
 .email{
     padding: 10px;
     margin: 0;
     color: tomato;
+    font-size: 18px;
+    text-decoration: underline;
+    font-variant: small-caps;
 }
 .logOutButton{
     /* padding: 10px;
@@ -19,9 +23,14 @@
     margin-right: 3px;
     color: tomato;
     background-color:bisque;
-    padding: 7px 15px;
+    padding: 1px 7px;
     border: 1px solid rosybrown;
     border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.logOutButton:hover{
+    color: black;
 }
 .link {
     display: inline-block;
@@ -31,10 +40,14 @@
     margin: 0;
     margin-right: 7px;
 }
-/* 
-.activeLink {
+.link:hover{
+    fill: black;
+}
+
+
+.link:active {
     color:crimson;
-} */
+}
 .icon {
     display: inline-block;
     align-items: flex-end;
@@ -44,4 +57,7 @@ path {
     width: 14px;
     padding: 3px;
     color: brown;
+}
+path:hover {
+    fill: black;
 }
