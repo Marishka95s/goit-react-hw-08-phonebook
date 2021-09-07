@@ -1,13 +1,14 @@
-.contacts {
+.heading {
+    padding-left: 20px;
     background-color: bisque;
     /* border: 1px solid brown; */
-    width: 524px;
+    width: 624px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:bisque;
-    /* margin-top: 30px; */
+    padding-top: 15px;
+    padding-bottom: 15px;
     margin-left: auto;
     margin-right: auto;
     color: brown;

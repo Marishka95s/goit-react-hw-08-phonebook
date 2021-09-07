@@ -2,18 +2,26 @@
     display: flex;
     justify-content: flex-end;
     background-color: bisque;
-    width: 624px;
+    /* width: 624px; */
     /* padding: 10px; */
     font-size: 14px;
 }
 .email{
     padding: 10px;
     margin: 0;
+    color: tomato;
 }
-.backButton{
-    padding: 10px;
+.logOutButton{
+    /* padding: 10px;
     background-color: transparent;
-    border: none;
+    border: none; */
+    margin-top: 3px;
+    margin-right: 3px;
+    color: tomato;
+    background-color:bisque;
+    padding: 7px 15px;
+    border: 1px solid rosybrown;
+    border-radius: 5px;
 }
 .link {
     display: inline-block;
@@ -24,10 +32,9 @@
     margin-right: 7px;
 }
 
-/* .activeLink {
-    composes: link;
+.activeLink {
     color:crimson;
-} */
+}
 .icon {
     display: inline-block;
     align-items: flex-end;

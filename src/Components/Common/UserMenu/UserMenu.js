@@ -1,13 +1,17 @@
-import { NavLink } from "react-router-dom";
+import { useSelector, useDispatch } from 'react-redux';
+import { authSelectors, authOperations } from '../../../redux/auth';
 import styles from './UserMenu.module.css';
 import { AiOutlineLogout } from "react-icons/ai";
 
 const UserMenu = () => {
+  const dispatch = useDispatch();
+  const email = useSelector(authSelectors.getUserEmail);
+
   return (
   <div className={styles.userMenu}>
-    <p className={styles.email}>User email</p>
+    <span className={styles.email}>{email}</span>
     
-    <button type="submit" className={styles.backButton} > 
+    <button type="button" className={styles.logOutButton} onClick={() => dispatch(authOperations.logOut())}> 
       <p className={styles.link}>Log out</p> 
       <div className={styles.icon}><AiOutlineLogout /></div> </button>
   </div>

@@ -1,19 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useSelector, useDispatch } from 'react-redux';
-import { getFiltredContacts, getError, getLoadingStatus } from '../../../redux/phonebook/contacts-selectors';
-import { fetchContact, deleteContact } from '../../../redux/phonebook/contacts-operations';
+// import { getFiltredContacts, getError, getLoadingStatus } from '../../../redux/phonebook/contacts-selectors';
+// import { fetchContact, deleteContact } from '../../../redux/phonebook/contacts-operations';
 import styles from './ContactList.module.css';
 import { useEffect } from 'react';
 
+import { ContactsSelectors, ContactsOperations } from '../../../redux/phonebook';
+
 export default function ContactList() { 
-    const error = useSelector(getError);
-    const loading = useSelector(getLoadingStatus);
+    const error = useSelector(ContactsSelectors.getError);
+    const loading = useSelector(ContactsSelectors.getLoadingStatus);
     const dispatch = useDispatch();
     useEffect(() => {
-        dispatch(fetchContact());
+        dispatch(ContactsOperations.fetchContact());
     }, [dispatch]);
-    const contacts = useSelector(getFiltredContacts);     
+    const contacts = useSelector(ContactsSelectors.getFiltredContacts);     
 
     return(
     <>
@@ -23,7 +25,7 @@ export default function ContactList() {
         {contacts.map( ({ id, name, number }) => (
             <li key={id} className={styles.item}>
                 <p className={styles.name}>{name}: <span>{number}</span></p>
-                <button type="button" className={styles.btn} onClick={() => dispatch(deleteContact(id))}>Delete</button>
+                <button type="button" className={styles.btn} onClick={() => dispatch(ContactsOperations.deleteContact(id))}>Delete</button>
             </li>
         ) )
         }

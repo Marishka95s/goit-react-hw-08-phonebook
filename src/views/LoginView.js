@@ -1,24 +1,9 @@
-// import { useState, useEffect } from "react";
-// import { NavLink, useRouteMatch, useLocation } from "react-router-dom";
-import { useSelector } from 'react-redux';
-import { getTotalContacts } from '../redux/phonebook/contacts-selectors'
-
-import ContactList from '../Components/Contacts/ContactList';
-import styles from './ContactsView.module.css';
+import LoginForm from '../Components/Authorization/LoginForm/LoginForm';
 
 export default function LoginView() {
-    const totalContacts = useSelector(getTotalContacts);
-    // const { url } = useRouteMatch();
-    // const location = useLocation();
-    // const [movies, setMovies] = useState(null);
-
-    // useEffect(() => {
-    //     moviesFetchAPI.fetchTrendingMovies().then(data => setMovies(data.results));
-    // }, [])
-    
-    return(
-        <div className={styles.contacts}>
-            <ContactList />
-        </div>
-    )
+  return (
+    <>
+      <LoginForm />
+    </>
+  );
 }

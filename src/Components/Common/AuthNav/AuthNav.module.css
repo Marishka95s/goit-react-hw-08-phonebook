@@ -1,26 +1,20 @@
-.navigation{
-    background-color: bisque;
-}
 .link {
     display: inline-block;
     text-decoration: none;
     padding: 12px;
     font-weight: 500;
-    color: brown;
     font-size: 18px;
+    color: brown;
 }
 .activeLink {
-    color:red;
+  color:red;
 }
 .link:hover {
-    color: black;
+  color: black;
 }
 .icon {
-    display: inline;
-}
-.icon:hover {
-    color: black;
+  display: inline;
 }
 path {
-    display: inline;
+  display: inline;
 }

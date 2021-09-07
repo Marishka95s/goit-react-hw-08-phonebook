@@ -1,0 +1,38 @@
+.loginPage {
+    background-color: bisque;
+    width: 624px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    /* padding-top: 10px; */
+    /* padding-bottom: 10px; */
+}
+.label{
+    display: block;
+    margin: 5px;
+    color: brown;
+}
+.input{
+    margin-left: 20px;
+    padding: 10px 20px;
+    border: 1px solid rosybrown;
+    background-color:bisque;
+    border-radius: 5px;
+}
+.loginButton{
+    color: tomato;
+    background-color:bisque;
+    padding: 10px 20px;
+    border: 1px solid rosybrown;
+    border-radius: 5px;
+}
