@@ -1,28 +1,31 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useSelector, useDispatch } from 'react-redux';
-import changeFilter from '../../../redux/phonebook/contacts-actions';
-import { ContactsSelectors } from '../../../redux/phonebook';
+import { ContactsSelectors, ContactsActions } from '../../../redux/phonebook';
 import styles from './Filter.module.css';
 
-export default function Filter() {
+const Filter = () => {
     const filter = useSelector(ContactsSelectors.getFilter);
     const dispatch = useDispatch();
     const onChangeFilter = event =>{
-        console.log(event.currentTarget.value)
-        // dispatch(changeFilter(event.currentTarget.value))
-};
+        dispatch(ContactsActions.changeFilter(event.currentTarget.value))
+    };
 
     return(
-    <form>
+    <form className={styles.form}>
     <label className={styles.label}>
         Find contacts by name
-        <input className={styles.input} type="text" required value={filter} onChange={onChangeFilter} placeholder="Enter name"
-        pattern="^[a-zA-Zа-яА-ЯІіЇїҐґ]+(([' -][a-zA-Zа-яА-ЯІіЇїҐґ ])?[a-zA-Zа-яА-ЯІіЇїҐґ]*)*$"
-        title="The name can only consist of letters, apostrophes, dashes and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan ..."/>
+        <input className={styles.input} 
+        type="text" 
+        placeholder="Enter name"  
+        name="filter" 
+        required onChange={onChangeFilter} 
+        value={filter}/>
     </label>
     </form>
 )};
 Filter.propTypes = {
-    value: PropTypes.string,
+    filter: PropTypes.string,
 }
+
+export default Filter;

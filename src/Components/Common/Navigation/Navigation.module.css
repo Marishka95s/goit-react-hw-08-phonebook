@@ -17,10 +17,12 @@
 }
 .icon {
     display: inline;
+    margin-right: 5px;
 }
 .icon:hover {
     color: black;
 }
 path {
-    display: inline;
+    display: inline;    
+    padding: 3px;
 }

@@ -1,15 +1,19 @@
-.heading {
-    padding-left: 20px;
+.home {
     background-color: bisque;
-    /* border: 1px solid brown; */
     width: 624px;
+}
+.heading {
+    /* padding-left: 20px;
+    background-color: bisque; */
+    /* border: 1px solid brown; */
+    /* width: 624px;
     text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
     padding-top: 15px;
-    padding-bottom: 15px;
+    /* padding-bottom: 15px;
     margin-left: auto;
     margin-right: auto;
-    color: brown;
+    color: brown; */
 }

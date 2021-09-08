@@ -17,17 +17,17 @@
 }
 .logOutButton{
     /* padding: 10px;
-    background-color: transparent;
-    border: none; */
+    background-color: transparent; */
+    border: none;
     margin-top: 3px;
     margin-right: 3px;
-    color: tomato;
+    color: brown;
     background-color:bisque;
-    padding: 1px 7px;
-    border: 1px solid rosybrown;
+    padding: 0;
+    /* border-bottom: thick double brown; */
     border-radius: 5px;
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 500;
 }
 .logOutButton:hover{
     color: black;
@@ -44,13 +44,13 @@
     fill: black;
 }
 
-
 .link:active {
     color:crimson;
 }
 .icon {
     display: inline-block;
     align-items: flex-end;
+    margin-right: 5px;
 }
 path {
     display: inline-block;
@@ -58,6 +58,6 @@ path {
     padding: 3px;
     color: brown;
 }
-path:hover {
+.link:hover path {
     fill: black;
 }

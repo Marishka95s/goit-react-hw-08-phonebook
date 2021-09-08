@@ -12,8 +12,10 @@ const UserMenu = () => {
     <span className={styles.email}>{email}</span>
     
     <button type="button" className={styles.logOutButton} onClick={() => dispatch(authOperations.logOut())}> 
+      
+      <div className={styles.icon}><AiOutlineLogout /></div> 
       <p className={styles.link}>Log out</p> 
-      <div className={styles.icon}><AiOutlineLogout /></div> </button>
+    </button>
   </div>
 )};
 
