@@ -10,8 +10,8 @@
     "RegisterView.js": "/goit-react-hw-08-phonebook/static/js/RegisterView.f3adc91e.chunk.js",
     "RegisterView.js.map": "/goit-react-hw-08-phonebook/static/js/RegisterView.f3adc91e.chunk.js.map",
     "main.css": "/goit-react-hw-08-phonebook/static/css/main.a800dbcc.chunk.css",
-    "main.js": "/goit-react-hw-08-phonebook/static/js/main.7aa846d1.chunk.js",
-    "main.js.map": "/goit-react-hw-08-phonebook/static/js/main.7aa846d1.chunk.js.map",
+    "main.js": "/goit-react-hw-08-phonebook/static/js/main.006515b1.chunk.js",
+    "main.js.map": "/goit-react-hw-08-phonebook/static/js/main.006515b1.chunk.js.map",
     "runtime-main.js": "/goit-react-hw-08-phonebook/static/js/runtime-main.2cc6dade.js",
     "runtime-main.js.map": "/goit-react-hw-08-phonebook/static/js/runtime-main.2cc6dade.js.map",
     "static/css/5.7bc7fa5b.chunk.css": "/goit-react-hw-08-phonebook/static/css/5.7bc7fa5b.chunk.css",
@@ -34,6 +34,6 @@
     "static/css/5.7bc7fa5b.chunk.css",
     "static/js/5.30f3c133.chunk.js",
     "static/css/main.a800dbcc.chunk.css",
-    "static/js/main.7aa846d1.chunk.js"
+    "static/js/main.006515b1.chunk.js"
   ]
 }
